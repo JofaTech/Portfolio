@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <!-- linking css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Creating a functional navigation bar at the top of page using Bootstrap-->
+    <!-- Navbar will stay fixed to top of screen while scrolling-->
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+        <div class="container">
+            <a class="navbar-brand" href="#">Brandon Lukevich</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Adds links to different pages sections in navigation bar-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Page Layout combined with GitHub API Info (Profile Pic and Bio) -->
+    <section class="bgimage" id="home">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                    <!-- GitHub Avatar -->
+                    <img id="github-avatar" class="rounded-circle mb-4" width="300" alt="GitHub Avatar">
+
+                    <!-- Main heading -->
+                    <h2 class="hero_title">Hi, I'm Brandon</h2>
+
+                    <!-- GitHub bio -->
+                    <p id="github-bio" class="hero_desc">Loading bio...</p>
+
+                    <!-- Download Resume Button-->
+                    <div class="text-center">
+                        <a href="assets/Brandon-Lukevich-Resume.pdf" class="btn btn-success mt-3" download>Download
+                            Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section Layout (with image on the left)-->
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center">About Me</h1>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img src="images/placeholder1.jpg" class="imageAboutPage" alt="">
+                </div>
+
+                <div class="col-lg-8">
+                    <p>
+                        Hi, I’m Brandon — a proud dad of three awesome girls and a lifelong tech enthusiast. I’ve always
+                        been curious about how things work, which started with coding simple text-based games as a kid
+                        and eventually led me to earn a Computer Science degree in 2022. Along the way, I’ve worn a lot
+                        of hats — from working in hardware engineering to managing systems support — but my heart’s set
+                        on building a career in software development.
+                    </p>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Dual citizen, originally from Calgary, Alberta</li>
+                                <li>Started programming young with text-based games</li>
+                                <li>Background in Java, C++, front-end and back-end development</li>
+                                <li>Degree in Electrical Engineering Technology + Computer Science</li>
+                                <li>Experience with Agile, troubleshooting, and team collaboration</li>
+                                <li>Former hardware engineer turned software-focused</li>
+                                <li>Skilled in networking, software updates, and vendor relations</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Current Systems Support Specialist managing tech for a school district</li>
+                                <li>Passionate about clean code and practical problem-solving</li>
+                                <li>Cooking is my creative outlet (love food TikToks & new recipes)</li>
+                                <li>Enjoy reading sci-fi/fantasy, movies, and the occasional video game</li>
+                                <li>Creativity shows up in writing, sketching, and playing guitar</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <p>
+                            I’m now focused on launching my career as a software developer or engineer — somewhere I can
+                            keep learning, contribute to meaningful work, and grow alongside a supportive team. I’m
+                            always up for a challenge, especially if it means building something useful and working with
+                            good people.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section-->
+    <section id="projects">
+        <div class="container mt-3">
+            <h1 class="text-center">Projects</h1>
+            <div class="row">
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/api.png" alt="Card Image" style="width: 100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Twitter Clone</h4>
+                            <p class="card-text">
+                                A RESTful API built with Spring Boot, JPA,
+                                and PostgreSQL that models core Twitter-like functionality
+                                including users, tweets, likes, mentions, and hashtags.
+                            </p>
+                            <div class="text-center">
+                                <a href="https://github.com/JofaTech/TwitterClone" class="btn btn-success">View on
+                                    GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/quiz.jpg" alt="Card Image" style="width: 100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Quiz API</h4>
+                            <p class="card-text">
+                                A RESTful Java API for managing quizzes, questions, and answers
+                                using Spring Boot. Features clean endpoint design, DTOs for data
+                                abstraction, and object mapping for efficient request/response handling.
+                            </p>
+                            <div class="text-center">
+                                <a href="https://github.com/JofaTech/QuizAPI" class="btn btn-success">View on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/portfolio.jpg" alt="Card Image" style="width: 100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Portfolio Website</h4>
+                            <p class="card-text">
+                                A responsive personal portfolio website built with HTML, CSS,
+                                Bootstrap, and JavaScript. Showcases projects, skills, and background
+                                with clean layout, custom styling, and GitHub integration.
+                            </p>
+                            <div class="text-center">
+                                <a href="https://github.com/JofaTech/Portfolio" class="btn btn-success">View on
+                                    GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/compiler.png" alt="Card Image" style="width: 100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Custom Interpreter/Compiler</h4>
+                            <p class="card-text">
+                                Implemented a mini language toolchain in Java, including Lexer,
+                                Parser, Interpreter, Semantic Analyzer, and Code Generator. Applied
+                                OOP principles and parsing techniques to build a modular compiler from scratch.
+                            </p>
+                            <div class="text-center">
+                                <a href="https://github.com/JofaTech/LanguageProcessor" class="btn btn-success">View on
+                                    GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/tetris.jpg" alt="Card Image" style="width: 100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Custom C++ Memory Manager</h4>
+                            <p class="card-text">
+                                A console-based memory management system that handles dynamic allocation,
+                                deallocation, and fragmentation reduction by tracking and merging free
+                                memory blocks. Includes logging and basic unit tests for correctness.
+                            </p>
+                            <div class="text-center">
+                                <a href="https://github.com/JofaTech/MemoryManager" class="btn btn-success">View on
+                                    GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/lemonade_stand.png" alt="Card Image" style="width: 100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Lemonade Stand</h4>
+                            <p class="card-text">
+                                A full-stack Spring Boot application that emulates a Lemonade Stand business,
+                                using PostgreSQL for data storage. Built with Maven and a layered architecture
+                                using controllers, services, DTOs, mappers, and repositories to handle inventory,
+                                pricing, and sales operations.
+                            </p>
+                            <div class="text-center">
+                                <a href="https://github.com/JofaTech/SpringLemonadeStand" class="btn btn-success">View
+                                    on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Me Section-->
+    <section id="contact" class="py-5 bg-dark text-white">
+        <div class="container">
+            <h1 class="text-center mb-4">Contact Me</h1>
+
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="xyz@email.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Your Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Write something..."
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Send Message</button>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- Footer section for link icons (like GitHub)-->
+    <footer class="footer text-center py-4">
+        <a href="https://github.com/JofaTech" target="_blank" class="footer-icon" aria-label="GitHub">
+            <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a href="https://linkedin.com/in/brandonlukevich" target="_blank" class="footer-icon" aria-label="LinkedIn">
+            <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+    </footer>
+
+    <!-- load javascript after loading all html content -->
+    <script src="portfolio.js"></script>
+</body>
+
+</html>
