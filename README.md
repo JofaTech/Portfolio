@@ -2,9 +2,16 @@
 
 Welcome to my personal developer portfolio website! This responsive single-page site showcases who I am, what I’ve built, and how to get in touch with me. It’s built using HTML, CSS (with Bootstrap), and vanilla JavaScript.
 
-## 🚀 Live Demo
+---
 
-Check it out here: [your-live-link.com](https://your-live-link.com)
+## 🧰 Built With
+
+- HTML5
+- CSS3
+- Bootstrap 5
+- JavaScript (vanilla)
+- Font Awesome (for icons)
+- GitHub API (for profile picture and bio)
 
 ---
 
@@ -25,13 +32,3 @@ I'm a passionate developer focused on building dynamic and user-friendly applica
 
 ---
 
-## 🧰 Built With
-
-- HTML5
-- CSS3
-- Bootstrap 5
-- JavaScript (vanilla)
-- Font Awesome (for icons)
-- GitHub API (for profile picture and bio)
-
----
